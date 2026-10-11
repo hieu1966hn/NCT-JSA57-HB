@@ -5,12 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài thực hành</title>
+    <style>
+        .container-up{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 3fr 4fr; */
+            grid-template-columns: auto auto auto auto;
+            border: 1px solid black;
+
+        }
+
+        .item1{
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        .item2{
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        .item4 .item-child{
+            background-color: yellow;
+        }
+
+        .item1, .item2, .item3, .item4, .item3 div, .item4 div{
+            border: 1px solid black;
+        }
+
+
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        
+    <div class="container-up">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="item4">
+            <div>5</div>
+            <div>6</div>
+            <div class="item-child">7</div>
+        </div>
     </div>
+
+
+    <div class="container-down"></div>
 
 </body>
 
