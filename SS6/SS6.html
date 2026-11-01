@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 6: Object, Hàm & DOM</title>
+</head>
+
+<body>
+
+    <h1 id="heading">Buổi 6 - DOM</h1>
+    <button id="btn-heading" onclick="handleClick()">Click</button>
+
+    <!-- <script src="./app.js"></script> -->
+    <!-- <script src="./object.js"></script> -->
+     <script>
+        // nơi viết JavaScript
+        h1 = document.getElementById("heading")
+        // console.log("h1: ", h1);
+        h1.innerHTML = h1.innerHTML + ", Object, Array và ôn tập"
+
+
+        /// Click vào nút thì cập nhật nội dung và màu sắc chữ
+        let btn_heading = document.getElementById("btn-heading")
+        function handleClick(){
+            h1.style.color = "red"
+        }
+        ////
+     </script>
+</body>
+
+</html>
